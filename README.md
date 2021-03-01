@@ -1,3 +1,13 @@
+## Notes 
+
+* I used bootstrap for some basic styles due to the time constraints
+* There some additional styles for movie cards implemented using CSS Modules
+* The composition uses 3 function components FilterGenres, GenreList, MovieList
+* State is lifted into App root component using React Hooks
+* Type checking is done via PropTypes
+* Font used is Google Font: Roboto
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
