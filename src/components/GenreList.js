@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const GenreList = ({genre_ids, genres}) => (

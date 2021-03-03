@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
+import React from 'react';
 import GenreList from './GenreList';
+import PropTypes from 'prop-types';
 import styles from './MovieList.module.css';
 
 const MovieList = ({movies, filterRating, genres, filterGenres}) => {

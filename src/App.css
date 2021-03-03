@@ -9,3 +9,7 @@ body {
   display: flex;
   color: white;
 }
+
+.App-filters {
+	background-color: #f5f5f5;
+}
