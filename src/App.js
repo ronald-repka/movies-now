@@ -37,8 +37,8 @@ function App() {
         resolve(moviesResponse);
       }, 100);
     }).then((response) => {
+      setUsedGenres(getUsedGenres(response.results));
       setMovies(response.results.sort((a, b) => b.popularity - a.popularity));
-      setUsedGenres(getUsedGenres(movies));
     });
     new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -47,7 +47,7 @@ function App() {
     }).then((response) => {
       setGenres(response.genres);
     });
-  }, [movies]);
+  }, []);
 
   return (
     <div className="App">

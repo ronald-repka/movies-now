@@ -26,9 +26,9 @@ const FilterGenres = ({genres, usedGenres, filterGenres, setFilterGenres}) => {
       {genres.map(({id, name}) =>
         usedGenres.includes(id) && (
           <div className="col form-check" key={id}>
-            <input className="mr-2" type="checkbox" id={`genre-${id}`} name={`genre-${id}`}
+            <input className="mr-2" type="checkbox" id={`genre-${id}`} name="genre"
               onChange={onChange} 
-              defaultChecked={filterGenres.includes(id)} 
+              checked={filterGenres.includes(id)} 
               value={id}
             />
             <label className="form-check-label" htmlFor={`genre-${id}`}>{name}</label>
